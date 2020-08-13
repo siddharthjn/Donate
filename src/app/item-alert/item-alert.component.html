@@ -1,0 +1,31 @@
+<form method="POST" action="" id="alertForm">
+  <fieldset>
+    <legend>Item</legend>
+    <ul>
+      <li><label for="type">Type of product :</label>
+        <select id="type">
+          <option value="med">Medicines</option>
+          <option value="book">Books</option>
+        </select></li>
+      <li><label for="itemName">Product name :</label>
+        <input type="text" id="itemName" required>
+      </li>
+    </ul>
+  </fieldset>
+  <br>
+  <fieldset>
+    <legend>Personal Info</legend>
+    <ul>
+      <li><label for="phn">Phone number :</label>
+        <input type="text" id="phn"></li>
+      <li><label for="email">Email address:</label>
+        <input type="text" id="email" required></li>
+      <li><label for="postalCode">Postal code :</label>
+        <input type="text" id="postalCode"></li>
+      <li><label for="comments"> Comments : </label>
+        <textarea id="comments"></textarea></li>
+    </ul>
+  </fieldset>
+
+  <button id="submit" type="submit">Set alert</button>
+</form>

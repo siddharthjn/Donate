@@ -1,0 +1,34 @@
+<ul class="nav">
+  <li class="nav-item">
+    <a class="nav-link active" [routerLink]="['']">Donate</a>
+  </li>
+  <li *ngIf="isUserLoggedIn" class="nav-item">
+    <a class="nav-link active" [routerLink]="['profile']">Profie</a>
+  </li>
+  <li *ngIf="isUserLoggedIn" class="nav-item">
+    <a class="nav-link active" [routerLink]="['inventory']">Inventory</a>
+  </li>
+  <li *ngIf="isUserLoggedIn" class="nav-item">
+    <a class="nav-link active" [routerLink]="['alert']">Set an alert</a>
+  </li>
+
+  <li *ngIf="!isUserLoggedIn" class="nav-item">
+    <a
+      class="nav-link justify-content-end"
+      role="button"
+      (click)="auth.googleSignIn()"
+    >
+      <i class="fa fa-google"></i> Connect Google
+    </a>
+  </li>
+
+  <li *ngIf="isUserLoggedIn" class="nav-item">
+    <a
+      class="nav-link justify-content-end"
+      role="button"
+      (click)="auth.signOut()"
+    >
+      <i class="fa fa-google"></i> Logout
+    </a>
+  </li>
+</ul>
