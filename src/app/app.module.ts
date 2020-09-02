@@ -13,6 +13,7 @@ import { NavbarComponent } from "./navbar/navbar.component";
 import { HomeComponent } from "./home/home.component";
 import { InventoryComponent } from "./inventory/inventory.component";
 import { ItemAlertComponent } from "./item-alert/item-alert.component";
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { ItemAlertComponent } from "./item-alert/item-alert.component";
     AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule,
     CoreModule,
+    BrowserAnimationsModule,
   ],
   providers: [AuthService],
   bootstrap: [AppComponent],
