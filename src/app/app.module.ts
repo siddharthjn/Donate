@@ -13,7 +13,8 @@ import { NavbarComponent } from "./navbar/navbar.component";
 import { HomeComponent } from "./home/home.component";
 import { InventoryComponent } from "./inventory/inventory.component";
 import { ItemAlertComponent } from "./item-alert/item-alert.component";
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { MatInputModule } from "@angular/material/input";
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     AngularFirestoreModule,
     CoreModule,
     BrowserAnimationsModule,
+    MatInputModule,
   ],
   providers: [AuthService],
   bootstrap: [AppComponent],
